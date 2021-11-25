@@ -1,0 +1,31 @@
+{
+  "name": "api-auth-facebook-google",
+  "version": "0.0.1",
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/passport": "^1.0.7",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
+    "eslint": "^8.3.0",
+    "nodemon": "^2.0.15",
+    "ts-node": "^10.4.0",
+    "typedoc": "^0.22.9",
+    "typescript": "^4.4.4"
+  },
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc --build tsconfig.json",
+    "build:watch": "tsc --build tsconfig.json --watch",
+    "prestart": "npm run build",
+    "start": "node .",
+    "dev": "nodemon"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "passport": "^0.5.0",
+    "passport-facebook": "^3.0.0",
+    "passport-google-oauth": "^2.0.0",
+    "passport-google-oauth20": "^2.0.0"
+  }
+}
